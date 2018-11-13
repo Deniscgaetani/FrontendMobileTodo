@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>
+      {{ticket.title}}
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="removeItem()" ><ion-icon name="remove-circle"></ion-icon></button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      {{ticket.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
